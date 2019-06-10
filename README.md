@@ -3,9 +3,9 @@ Ranking Vector Machine
 
 supplementary materials of:
 "Lowe, R., Mussa, H. Y., Mitchell, J. B., & Glen, R. C. (2011). Classifying molecules using a sparse probabilistic kernel binary classifier. Journal of chemical information and modeling, 51(7), 1539-1544."
-    
+
 SI: https://pubs.acs.org/doi/full/10.1021/ci200128w
-    
+
 zip: https://pubs.acs.org/doi/suppl/10.1021/ci200128w/suppl_file/ci200128w_si_001.zip
 
 ***************************************************************************
@@ -17,17 +17,17 @@ zip: https://pubs.acs.org/doi/suppl/10.1021/ci200128w/suppl_file/ci200128w_si_00
 ***************************************************************************
 1) RVM SOURCE
 
-Currently there is only support for Mac OS X as we are using the Accelerate Framework for the BLAS libraries. 
+Currently there is only support for Mac OS X as we are using the Accelerate Framework for the BLAS libraries.
 
-To Compile go to RVM Source Directory and type
-g++ main.cpp matrix.cpp SparseBayes.cpp lapack.cpp fullstatistics.cpp -o RVM -framework accelerate -O3
-
+To Compile, type make.
 This will compile a binary for your system named RVM
 
-You can then run the program as 
+You can then run the program as
+
 ./RVM
 
 Arguments:
+
 -k STRING Must be [Gaus,Cauch,Binary] This defines which kernel to use
 
 -b DOUBLE This defines the hyperparameter for that kernel

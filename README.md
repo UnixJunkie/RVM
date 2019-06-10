@@ -29,13 +29,21 @@ You can then run the program as
 
 Arguments:
 -k STRING Must be [Gaus,Cauch,Binary] This defines which kernel to use
+
 -b DOUBLE This defines the hyperparameter for that kernel
+
 -t STRING Directory of training file. The file must be tab separated and have the last column as the class label 1 or 0
+
 -v STRING Directory of Validation file
+
 -s STRING Directory of Test file
+
 -i INT    Iteration limit for algorithm
+
 -o STRING Directory of output file
+
 -r STRING Not used
+
 -y        Output probabilities
 
 ***************************************************************************
